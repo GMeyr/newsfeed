@@ -1,17 +1,17 @@
-<div class="item_wrapper col-lg">
-  <img src="" class="item_img" />
+<!-- I'd add an async pipe if I was getting data from the API instead of JSON mock data -->
+<!--<div *ngFor="let item of items | async" class="item_wrapper col-lg">-->
+<div *ngFor="let item of items" class="item_wrapper col-lg">
+  <img src="{{item.src}}" class="item_img" />
   <div class="item_title">
-    Test Title 1
+    {{item.title}}
   </div>
   <div class="item_desc">
-    Test Description Number One, Should Be Able To Wrap To The Next Line
+    {{item.post}}
   </div>
   <div class="item_infobox">
-    <span class="item_author">Author</span>
+    <span class="item_author">{{item.author}}</span>
     Was Published
-    <span class="item_timestamp">10 min ago</span>
+    <span class="item_timestamp">{{item.date}}</span>
   </div>
-
-  ITEMS: {{items}}
 </div>
 

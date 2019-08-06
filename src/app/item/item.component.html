@@ -1,12 +1,18 @@
-<img src="{{item.src}}" class="item_img" />
-<div class="item_title">
-  {{item.title}}
-</div>
-<div class="item_desc">
-  {{item.post}}
-</div>
-<div class="item_infobox">
-  <span class="item_author">{{item.author}}</span>
-  Was Published
-  <span class="item_timestamp">{{item.date}}</span>
+<div class="d-lg-inline-flex d-m-flex">
+    <div class="">
+      <img src="{{item.img}}" class="item_img img-responsive" />
+    </div>
+    <div class="">
+      <div class="item_title">
+        {{item.title}}
+      </div>
+      <div class="item_desc">
+        {{item.post}}
+      </div>
+      <div class="item_infobox">
+        <span class="item_author">{{item.author}}</span>
+        Was Published
+        <span class="item_timestamp">{{item.date}}</span>
+      </div>
+    </div>
 </div>

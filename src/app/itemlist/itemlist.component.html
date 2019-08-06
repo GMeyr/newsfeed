@@ -1,5 +1,5 @@
 <!-- I'd add an async pipe if I was getting data from the API instead of JSON mock data -->
-<!--<Item *ngFor="let item of items | async" class="item_wrapper col-lg"></Item>-->
+<!--<div *ngFor="let item of items" class="item_wrapper col-lg">-->
 <div *ngFor="let item of items" class="item_wrapper col-lg">
   <app-item [item]="item"></app-item>
 </div>

@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { ItemComponent } from './item/item.component';
 import { ItemlistComponent } from './itemlist/itemlist.component';
 import { HttpClientModule } from "@angular/common/http";
+import { SideCTAComponent } from './side-cta/side-cta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ItemComponent,
-    ItemlistComponent
+    ItemlistComponent,
+    SideCTAComponent
   ],
   imports: [
     BrowserModule,

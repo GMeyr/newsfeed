@@ -1,17 +1,5 @@
 <!-- I'd add an async pipe if I was getting data from the API instead of JSON mock data -->
-<!--<div *ngFor="let item of items | async" class="item_wrapper col-lg">-->
+<!--<Item *ngFor="let item of items | async" class="item_wrapper col-lg"></Item>-->
 <div *ngFor="let item of items" class="item_wrapper col-lg">
-  <img src="{{item.src}}" class="item_img" />
-  <div class="item_title">
-    {{item.title}}
-  </div>
-  <div class="item_desc">
-    {{item.post}}
-  </div>
-  <div class="item_infobox">
-    <span class="item_author">{{item.author}}</span>
-    Was Published
-    <span class="item_timestamp">{{item.date}}</span>
-  </div>
+  <app-item [item]="item"></app-item>
 </div>
-
